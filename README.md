@@ -1,0 +1,2 @@
+# Shor's Algorithm
+Shor's algorithm is an algorithm for quantum computers that allows large numbers to be factored efficiently. While this may not sound like a big revolution, modern cryptography relies on the fact that it takes an extremely long time to find factors of a large number. However, with a good quantum computer, factoring large numbers can be done easily, which will break most security systems.
