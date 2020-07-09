@@ -3,7 +3,7 @@ const k = 11; // Our premature guess
 const N = 15; // The number to factor
 
 // How long our sequence wants to be. A higher number means a greater chance of success, but it takes longer to compute.
-const sampleSize = 6;
+const M = 6;
 
 var mods = []; // Makes a list.
 for (var i = 0; i < sampleSize; i++) // Repeat however many times our sample size was, in this case 6.
