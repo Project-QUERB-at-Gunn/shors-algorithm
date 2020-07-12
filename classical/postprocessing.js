@@ -1,6 +1,6 @@
 // AFTER OUR QUANTUM ALGORITHM IS EXECUTED
 
-import { N, k, gcd } from './preprocessing';
+import { N, k, M } from './common';
 
 // Our period returned by the quantum computer is defined
 const p = 2;
