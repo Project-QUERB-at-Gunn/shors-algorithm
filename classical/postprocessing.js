@@ -1,6 +1,16 @@
 // AFTER OUR QUANTUM ALGORITHM IS EXECUTED
-
 import { N, k, M } from './common';
+
+// Check for divisibility between N and k
+// First we define a gcd(x,y) function to find the greatest
+// common divisor of two integers by using the classically
+// efficient Euclidean algorithm. 
+export var gcd = function(x, y) {
+    if (y == 0) {
+        return x;
+    }
+    return gcd (y, x % y);
+};
 
 // Our period returned by the quantum computer is defined
 const p = 2;
