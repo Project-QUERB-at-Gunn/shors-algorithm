@@ -1,5 +1,5 @@
 // AFTER OUR QUANTUM ALGORITHM IS EXECUTED
-import { N, k, M } from './common';
+import { N, k, M } from './common'; // See common.js for more info.
 
 // Check for divisibility between N and k
 // First we define a gcd(x,y) function to find the greatest
