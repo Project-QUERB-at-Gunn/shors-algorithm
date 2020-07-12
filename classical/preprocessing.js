@@ -1,8 +1,5 @@
-const k = 11; // Our premature guess
-const N = 15; // The number to factor
-
-// How long our sequence wants to be. A higher number means a greater chance of success, but it takes longer to compute.
-const M = 6;
+// BEFORE QUANTUM ALGORITHM IS EXECUTED
+import { N, k, M } from './common'; // See common.js for more info.
 
 var mods = []; // Makes a list.
 for (var i = 0; i < M; i++) // Repeat however many times our sample size was, in this case 6.
