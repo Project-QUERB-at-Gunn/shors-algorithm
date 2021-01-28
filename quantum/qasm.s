@@ -1,0 +1,31 @@
+OPENQASM 2.0;
+include "qelib1.inc";
+
+qreg in[3];
+qreg modExp[4];
+qreg tech[1];
+creg out[3];
+creg null[1];
+
+h in[2];
+x modExp[0];
+x in[2];
+ch in[2],in[1];
+ch in[2],in[0];
+h in[0];
+x in[2];
+crz(pi/2) in[1],in[0];
+cx in[2],modExp[1];
+h in[1];
+cx in[2],modExp[3];
+crz(pi/4) in[2],in[0];
+measure modExp[0] -> null[0];
+crz(pi/2) in[2],in[1];
+measure modExp[1] -> null[0];
+h in[2];
+measure modExp[2] -> null[0];
+measure modExp[3] -> null[0];
+measure in[0] -> out[0];
+measure in[1] -> out[1];
+measure in[2] -> out[2];
+measure tech[0] -> null[0];
